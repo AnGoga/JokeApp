@@ -14,7 +14,6 @@ class Joke(
     @SerialName("gifURL") var gifURL: String? = null,
     @SerialName("videoURL") var videoURL: String? = null,
     @SerialName("previewURL") var previewURL: String? = null,
-    @SerialName("videoPath") var videoPath: String? = null,
     @SerialName("type") var type: String,
 ) {
 

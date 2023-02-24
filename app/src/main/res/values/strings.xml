@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">JokeApp</string>
+    <string name="last">Последние</string>
+    <string name="best">Лучшие</string>
+    <string name="random">Рандомная</string>
+    <string name="author">Автор:</string>
+    <string name="rating">Рейтинг:</string>
+    <string name="date">Дата:</string>
+    <string name="previous"><![CDATA[<<< Предыдущая]]></string>
+    <string name="next"><![CDATA[Следующая >>>]]></string>
 </resources>
