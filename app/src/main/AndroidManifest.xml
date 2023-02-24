@@ -12,11 +12,12 @@
         android:label="@string/developers_life"
         android:supportsRtl="true"
         android:theme="@style/Theme.JokeApp"
-        android:name=".JokeApplication"
+
         android:usesCleartextTraffic="true"
+
         tools:targetApi="31">
         <activity
-            android:name=".screens.joke.JokeActivity"
+            android:name=".ui.screens.joke.JokeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

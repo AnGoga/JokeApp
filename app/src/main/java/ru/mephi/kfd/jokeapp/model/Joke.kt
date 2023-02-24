@@ -2,7 +2,6 @@ package ru.mephi.kfd.jokeapp.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import ru.mephi.kfd.jokeapp.database.entity.JokeEntity
 
 
 @Serializable
@@ -17,10 +16,6 @@ class Joke(
     @SerialName("previewURL") var previewURL: String? = null,
     @SerialName("type") var type: String,
 ) {
-
-    fun toJokeEntity(): JokeEntity {
-        return JokeEntity(id, description, votes, author, date, gifURL, videoURL, previewURL, type)
-    }
 
     companion object {
         const val TYPE_GIF = "gif"

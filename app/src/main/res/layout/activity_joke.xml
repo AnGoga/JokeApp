@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.joke.JokeActivity">
+    tools:context=".ui.screens.joke.JokeActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/type_group_card"

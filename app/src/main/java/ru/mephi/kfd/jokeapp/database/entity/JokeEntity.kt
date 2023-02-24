@@ -3,8 +3,6 @@ package ru.mephi.kfd.jokeapp.database.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import kotlinx.serialization.SerialName
-import ru.mephi.kfd.jokeapp.model.Joke
 
 @Entity
 class JokeEntity(
@@ -17,8 +15,4 @@ class JokeEntity(
     @ColumnInfo(name = "videoURL") var videoURL: String? = null,
     @ColumnInfo(name = "previewURL") var previewURL: String? = null,
     @ColumnInfo(name = "type") var type: String,
-) {
-    fun toJoke(): Joke {
-        return Joke(id, description, votes, author, date, gifURL, videoURL, previewURL, type)
-    }
-}
+)
