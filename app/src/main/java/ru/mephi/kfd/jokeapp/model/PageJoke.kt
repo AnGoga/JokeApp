@@ -1,9 +1,10 @@
 package ru.mephi.kfd.jokeapp.model
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
 class PageJoke(
-    var result: List<Joke>,
-    var totalCount: Int
+    @SerialName("result") var result: List<Joke>,
+    @SerialName("totalCount") var totalCount: Int
 )
