@@ -12,9 +12,8 @@
         android:label="@string/developers_life"
         android:supportsRtl="true"
         android:theme="@style/Theme.JokeApp"
-
         android:usesCleartextTraffic="true"
-
+        android:name=".App"
         tools:targetApi="31">
         <activity
             android:name=".ui.screens.joke.JokeActivity"

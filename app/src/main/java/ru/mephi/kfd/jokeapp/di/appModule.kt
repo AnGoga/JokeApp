@@ -24,3 +24,8 @@ val networkModule = module {
     single { HttpServiceImpl(get()) } bind HttpService::class
 }
 
+
+
+val appModule = module {
+
+} + networkModule
