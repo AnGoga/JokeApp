@@ -7,4 +7,6 @@ import kotlinx.serialization.Serializable
 class PageJoke(
     @SerialName("result") var result: List<Joke>,
     @SerialName("totalCount") var totalCount: Int
-)
+) {
+    var totalPages: Int = totalCount / 5
+}

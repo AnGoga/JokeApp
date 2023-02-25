@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import ru.mephi.kfd.jokeapp.R
 import ru.mephi.kfd.jokeapp.model.Joke
 import ru.mephi.kfd.jokeapp.model.Joke.Companion.TYPE_GIF
+import ru.mephi.kfd.jokeapp.model.PageJoke
 
 class JokeAdapter(private val context: Context) : RecyclerView.Adapter<JokeAdapter.JokeHolder>() {
     private val inflater = LayoutInflater.from(context)
@@ -26,6 +27,13 @@ class JokeAdapter(private val context: Context) : RecyclerView.Adapter<JokeAdapt
 
     override fun onBindViewHolder(holder: JokeHolder, position: Int) {
         holder.initHolder(items[position])
+    }
+
+
+    fun updateData(pageJoke: PageJoke) {
+        items.clear()
+        items += pageJoke.result
+        notifyDataSetChanged()
     }
 
     inner class JokeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

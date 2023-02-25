@@ -9,7 +9,7 @@ class HttpServiceImpl(
     private val client: HttpClient
 ) : HttpService {
 
-    override suspend fun getRandomJoke(category: String, page: Int)
+    override suspend fun getRandomJoke(category: String)
         = client.get("$RANDOM_URL?json=true")
 
     override suspend fun getPageOfJokes(category: String, page: Int)
